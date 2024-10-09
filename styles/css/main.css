@@ -188,12 +188,6 @@ nav .icons {
 .dark .static, .dark .statics .main_static div, .statics .main_static .dark div {
   background: none;
 }
-
-.dark nav {
-  background-color: #8fc5ff;
-  margin-top: 0;
-}
-
 .sun-moon {
   background: #00458f;
   width: 80px;
