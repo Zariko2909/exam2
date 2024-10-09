@@ -29,12 +29,12 @@ nav {
     width: 24px;
     height: 24px;
     right: 55px;
-    background-color:#0076F5;
+    background-color: #0076f5;
     padding: 3px;
     top: 20px;
     border-radius: 2px;
     display: none;
-  } 
+  }
 }
 .hero {
   display: flex;
@@ -98,10 +98,6 @@ nav {
 }
 .dark .static {
   background: none;
-}
-.dark nav {
-  background-color: lighten(#0076f5, 30%);
-  margin-top: 0;
 }
 .sun-moon {
   background: #00458f;

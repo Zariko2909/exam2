@@ -35,14 +35,14 @@ body {
     left: 0;
     transform: translateX(-100%);
     z-index: 9999;
-    
+
     button {
       @include btn(116px, 50px);
       padding: 10px 30px;
       border-radius: 25px;
     }
-    li{
-        list-style: none;
+    li {
+      list-style: none;
     }
     a {
       font-family: Noto Sans;
@@ -55,11 +55,11 @@ body {
       padding: 6px;
     }
     .nav_wrap {
-      width:120%;
+      width: 120%;
       display: flex;
       justify-content: space-between;
       gap: 185px;
-      .wrap_logo{
+      .wrap_logo {
         position: absolute;
         top: 20px;
       }
@@ -75,79 +75,78 @@ body {
         border-radius: 2px;
       }
     }
-}
-@media (max-width: 768px) {
+  }
+  @media (max-width: 768px) {
     nav {
-        ul{
-            display: none;
-        }
-        button{
-            display: none;
-        }
-        .iconc{
-            display: block;
-        }
-        .icons{
-            display: block;
-        }
+      ul {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+      .iconc {
+        display: block;
+      }
+      .icons {
+        display: block;
+      }
     }
-    #check:checked+ .menu_navbar {
-        transform: translateX(0);
-        transition: 1s;
+    #check:checked + .menu_navbar {
+      transform: translateX(0);
+      transition: 1s;
     }
     .hero {
-        flex-direction: column;
-        flex-wrap: wrap;
-        gap: 295px;
-        text-align: center;
-        margin-bottom: 35px;
-        
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 295px;
+      text-align: center;
+      margin-bottom: 35px;
     }
     .sect {
-        .sec1 {
-            transform: scale(1);
-            background-position-y: 25px;
-            background-position-x: 18%;
-        }
-        .sec2 {
-            transform: scale(1.2);
-            background-position-y: 35%;
-            background-position-x: 55%;
-        }
-        .sec3 {
-            transform: scale(1);
-            background-position-y: 25px;
-            background-position-x: 95%;
-        }
+      .sec1 {
+        transform: scale(1);
+        background-position-y: 25px;
+        background-position-x: 18%;
+      }
+      .sec2 {
+        transform: scale(1.2);
+        background-position-y: 35%;
+        background-position-x: 55%;
+      }
+      .sec3 {
+        transform: scale(1);
+        background-position-y: 25px;
+        background-position-x: 95%;
+      }
     }
     .main_static {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .about_us {
-        flex-wrap: wrap;
-        .sect {
-            .sec {
-                transform: none;
-            }
+      flex-wrap: wrap;
+      .sect {
+        .sec {
+          transform: none;
         }
+      }
     }
     .cource {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .lesson {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .teams {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     .card_sert {
-        flex-wrap: wrap;
+      flex-wrap: wrap;
     }
     footer {
       flex-wrap: wrap;
     }
-}
-input{
+  }
+  input {
     display: none;
-}
+  }
 }
