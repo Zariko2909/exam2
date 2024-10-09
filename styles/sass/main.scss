@@ -52,79 +52,99 @@ body {
       text-align: right;
       color: #fff;
       text-decoration: none;
+      padding: 6px;
     }
     .nav_wrap {
-      width: 100%;
+      width:120%;
       display: flex;
       justify-content: space-between;
-      img {
-        font-size: 89px;
-        color: #fff;
+      gap: 185px;
+      .wrap_logo{
+        position: absolute;
+        top: 20px;
       }
-    }
-  }
-  @media (max-width: 768px) {
-    nav {
-      display: none;
-      .iconc{
-        display: block;
+      .iconc {
+        position: absolute;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
         background-color: #0076f5;
+        top: 20px;
+        left: 675px;
+        padding: 3px;
+        border-radius: 2px;
       }
     }
-    #check:checked + .menu_navbar {
-      transform: translateX(0);
-      transition: 1s;
+}
+@media (max-width: 768px) {
+    nav {
+        ul{
+            display: none;
+        }
+        button{
+            display: none;
+        }
+        .iconc{
+            display: block;
+        }
+    }
+    #check:checked+ .menu_navbar {
+        transform: translateX(0);
+        transition: 1s;
     }
     .hero {
-      flex-direction: column;
-      flex-wrap: wrap;
-      gap: 295px;
-      text-align: center;
-      margin-bottom: 35px;
-      
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 295px;
+        text-align: center;
+        margin-bottom: 35px;
+        
     }
     .sect {
-      .sec1 {
-        transform: scale(1);
-        background-position-y: 25px;
-        background-position-x: 18%;
-      }
-      .sec2 {
-        transform: scale(1.2);
-        background-position-y: 35%;
-        background-position-x: 55%;
-      }
-      .sec3 {
-        transform: scale(1);
-        background-position-y: 25px;
-        background-position-x: 95%;
-      }
+        .sec1 {
+            transform: scale(1);
+            background-position-y: 25px;
+            background-position-x: 18%;
+        }
+        .sec2 {
+            transform: scale(1.2);
+            background-position-y: 35%;
+            background-position-x: 55%;
+        }
+        .sec3 {
+            transform: scale(1);
+            background-position-y: 25px;
+            background-position-x: 95%;
+        }
     }
     .main_static {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .about_us {
-      flex-wrap: wrap;
-      .sect {
-        .sec {
-          transform: none;
+        flex-wrap: wrap;
+        .sect {
+            .sec {
+                transform: none;
+            }
         }
-      }
     }
     .cource {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .lesson {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .teams {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .card_sert {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     footer {
       flex-wrap: wrap;
     }
-  }
+}
+input{
+    display: none;
+}
 }

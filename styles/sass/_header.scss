@@ -23,6 +23,17 @@ nav {
   button {
     @include btn(116px, 50px);
   }
+  .icons {
+    position: absolute;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    right: 55px;
+    background-color:#0076F5;
+    padding: 3px;
+    top: 20px;
+    border-radius: 2px;
+  }
 }
 .hero {
   display: flex;
