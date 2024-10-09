@@ -1,0 +1,105 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 565px;
+    height: 26px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        color: $main-text-color;
+        &:hover {
+          color: $btn-border-color;
+        }
+      }
+    }
+  }
+  button {
+    @include btn(116px, 50px);
+  }
+}
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .main {
+    width: 69%;
+    height: 450px;
+    h1 {
+      margin-bottom: 46px;
+      font-family: Fira Code;
+      font-size: 79px;
+      font-weight: 500;
+      line-height: 88px;
+      letter-spacing: -0.08em;
+      text-align: left;
+      color: $main-text-color;
+      span {
+        color: $btn-border-color;
+      }
+    }
+    button {
+      @include btn(226px, 50px);
+    }
+  }
+  .sect {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+
+    .sec {
+      background-image: url("../../../assents/img/image.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: 28%;
+      width: 226px;
+      height: 605px;
+      object-fit: cover;
+      filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+    }
+    .sec2 {
+      background-image: url("../../../assents/img/image.jpg");
+      background-position-x: 63%;
+      background-position-y: -115px;
+      margin-top: 80px;
+      height: 90vh;
+    }
+    .sec3 {
+      background-image: url("../../../assents/img/image.jpg");
+      background-position-x: 88%;
+    }
+  }
+
+}
+
+.dark {
+  background-color: $main-text-color;
+}
+.dark * {
+  color: #fff !important;
+}
+.dark .static {
+  background: none;
+}
+.dark nav {
+  background-color: lighten(#0076f5, 30%);
+  margin-top: 0;
+}
+.sun-moon {
+  background: #00458f;
+  width: 80px;
+  height: 56px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  border: none;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}

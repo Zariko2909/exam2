@@ -1,0 +1,162 @@
+.statics {
+  h3 {
+    @extend .text_h3;
+  }
+  .main_static {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 30px;
+    div {
+      @extend .static;
+      h3 {
+        @extend .text_h3;
+      }
+      p {
+        @include txt_p(227px);
+      }
+    }
+  }
+}
+.about {
+  h3 {
+    @extend .text_h3;
+  }
+  .about_us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 142px;
+    .sect {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+
+      .sec {
+        background-image: url("../../../assents/img/images2.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 5%;
+        width: 354px;
+        height: 550px;
+        object-fit: cover;
+        filter: drop-shadow(10px 10px 15px rgba(0, 0, 0, 0.5));
+      }
+      .sec1 {
+        margin-top: 30px;
+      }
+      .sec2 {
+        background-image: url("../../../assents/img/images2.png");
+        background-position-x: 100%;
+      }
+    }
+    .about_text {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
+      h4 {
+        @extend .text_h4;
+      }
+      p {
+        @extend .text_p;
+      }
+    }
+  }
+}
+.course {
+  h3 {
+    @extend .text_h3;
+  }
+  .cource {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 65px;
+    .main-cource {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 16px;
+      img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+      }
+      h4 {
+        @extend .text_h4;
+        text-align: center;
+      }
+      p {
+        @extend .text_p;
+        span {
+          color: $btn-border-color;
+        }
+      }
+      button {
+        @include btn(226px, 50px);
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.lessons {
+  h3 {
+    @extend .text_h3;
+  }
+  .lesson {
+    display: flex;
+    justify-content: space-around;
+    .main_lesson {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding: 16px;
+      h4 {
+        @extend .text_h4;
+      }
+      p {
+        @extend .text_p;
+      }
+      button {
+        @include btn(195px, 50px);
+      }
+    }
+  }
+}
+.the_teams {
+  h3 {
+    @extend .text_h3;
+  }
+  .teams {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+    .team {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .programmer {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto
+      }
+      h4 {
+        @extend .text_h4;
+        text-align: center;
+      }
+      p {
+        @extend .text_p;
+      }
+      span {
+        color: #0076f5;
+      }
+      .icons{
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

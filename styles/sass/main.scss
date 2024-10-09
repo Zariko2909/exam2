@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@import "variable";
+@import "mixins";
+@import "inhertance";
+@import "header";
+@import "sections";
+@import "footer";
+
+body {
+  background: #f5faff;
+}
+.container {
+  max-width: 1440x;
+  margin: 0 auto;
+  .menu_navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 130px;
+    background-color: lighten(#0076f5, 30%);
+    width: 100vw;
+    height: 100vh;
+    gap: 50px;
+    position: fixed;
+    transition: 1s;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 9999;
+    
+    button {
+      @include btn(116px, 50px);
+      padding: 10px 30px;
+      border-radius: 25px;
+    }
+    li{
+        list-style: none;
+    }
+    a {
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.79px;
+      text-align: right;
+      color: #fff;
+      text-decoration: none;
+    }
+    .nav_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        font-size: 89px;
+        color: #fff;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    nav {
+      display: none;
+      .iconc{
+        display: block;
+        background-color: #0076f5;
+      }
+    }
+    #check:checked + .menu_navbar {
+      transform: translateX(0);
+      transition: 1s;
+    }
+    .hero {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 295px;
+      text-align: center;
+      margin-bottom: 35px;
+      
+    }
+    .sect {
+      .sec1 {
+        transform: scale(1);
+        background-position-y: 25px;
+        background-position-x: 18%;
+      }
+      .sec2 {
+        transform: scale(1.2);
+        background-position-y: 35%;
+        background-position-x: 55%;
+      }
+      .sec3 {
+        transform: scale(1);
+        background-position-y: 25px;
+        background-position-x: 95%;
+      }
+    }
+    .main_static {
+      flex-wrap: wrap;
+    }
+    .about_us {
+      flex-wrap: wrap;
+      .sect {
+        .sec {
+          transform: none;
+        }
+      }
+    }
+    .cource {
+      flex-wrap: wrap;
+    }
+    .lesson {
+      flex-wrap: wrap;
+    }
+    .teams {
+      flex-wrap: wrap;
+    }
+    .card_sert {
+      flex-wrap: wrap;
+    }
+    footer {
+      flex-wrap: wrap;
+    }
+  }
+}

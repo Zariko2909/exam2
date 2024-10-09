@@ -1,0 +1,83 @@
+.sertifikat{
+    h3{
+        @extend .text_h3;
+    }
+    .card_sert{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 158px;
+        .card_text{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            h4 {
+                @extend .text_h4;
+                
+              }
+              p {
+                @extend .text_p;
+              }
+        }
+    }
+}
+hr{
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    .bootstrap{
+        p{
+            font-family: Nunito Sans;
+            font-size: 17px;
+            font-weight: 600;
+            line-height: 26px;
+            text-align: left;
+            color: $ftr-text-color;
+            width: 375px;  
+            margin-bottom: 16px          
+        }
+
+    }
+    h4{
+        @extend .ftr_h4;
+        margin-bottom: 24px;
+    }
+    ul{
+        li{
+            list-style: none;
+            @extend .ftr_txt-li;
+            margin-bottom: 16px
+        }
+    }
+    .web{
+
+        p{
+            @extend .ftr_txt-li;
+            width: 354px;
+            margin-bottom: 16px;
+        }
+        input{
+            border: 1px solid #8FC5FF;
+            color: #2990FF;
+            background: #F5FAFF;
+            width: 354px;
+            height: 50px;
+            border-radius: 5px;
+            padding-left: 24px;
+            margin-bottom: 16px
+        }
+        button{
+            @include btn(354px, 50px);
+        }
+    }
+}
+.end{
+    text-align: center;
+    p{
+        margin: 16px;
+    }
+}
