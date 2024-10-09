@@ -109,6 +109,7 @@ nav .icons {
   padding: 3px;
   top: 20px;
   border-radius: 2px;
+  display: none;
 }
 
 .hero {
@@ -508,6 +509,9 @@ body {
     display: none;
   }
   .container nav .iconc {
+    display: block;
+  }
+  .container nav .icons {
     display: block;
   }
   .container #check:checked + .menu_navbar {
